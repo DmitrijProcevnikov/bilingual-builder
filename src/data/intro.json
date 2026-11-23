@@ -1,0 +1,125 @@
+{
+  "id": "intro",
+  "title": "Знакомство",
+  "emoji": "👋",
+  "items": [
+    {
+      "id": "intro_hello",
+      "situation": "Ты здороваешься",
+      "image": "👋",
+      "en": {
+        "target": "Hello, how are you?",
+        "tiles": ["Hello", "how", "are", "you"],
+        "structure": "[Greeting], [question word] [verb] [subject]"
+      },
+      "de": {
+        "target": "Hallo, wie geht es dir?",
+        "tiles": ["Hallo", "wie", "geht", "es", "dir"],
+        "structure": "[Greeting], [question word] [verb] [pronoun] [pronoun]"
+      },
+      "contrast": [
+        {
+          "type": "structure",
+          "note": "Немецкое 'wie geht es dir' — буквально 'как идёт это тебе'. Дословно с английского не переводится."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "intro_my_name",
+      "situation": "Ты называешь своё имя",
+      "image": "🙋",
+      "en": {
+        "target": "My name is Anna.",
+        "tiles": ["My", "name", "is", "Anna"],
+        "structure": "[Possessive] [noun] [verb] [name]"
+      },
+      "de": {
+        "target": "Ich heiße Anna.",
+        "tiles": ["Ich", "heiße", "Anna"],
+        "structure": "[Subject] [verb] [name]"
+      },
+      "contrast": [
+        {
+          "type": "structure",
+          "en": "My name is Anna",
+          "de": "Ich heiße Anna",
+          "note": "Немецкое 'heißen' = 'называться'. Буквально 'я называюсь Анна'. Не переводите 'My name is' дословно как 'Mein Name ist' — это понимают, но звучит формально."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "intro_nice_meet",
+      "situation": "Ты говоришь, что рад знакомству",
+      "image": "🤝",
+      "en": {
+        "target": "Nice to meet you.",
+        "tiles": ["Nice", "to", "meet", "you"],
+        "structure": "[Adjective] [infinitive] [verb] [object]"
+      },
+      "de": {
+        "target": "Freut mich.",
+        "tiles": ["Freut", "mich"],
+        "structure": "[Verb] [pronoun]"
+      },
+      "contrast": [
+        {
+          "type": "structure",
+          "note": "Английское 'Nice to meet you' — прилагательное + инфинитив. Немецкое 'Freut mich' — глагол + местоимение ('радует меня'). Совершенно разные конструкции."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "intro_from",
+      "situation": "Ты говоришь, откуда ты",
+      "image": "🌍",
+      "en": {
+        "target": "I am from Belarus.",
+        "tiles": ["I", "am", "from", "Belarus"],
+        "structure": "[Subject] [verb] [preposition] [place]"
+      },
+      "de": {
+        "target": "Ich komme aus Belarus.",
+        "tiles": ["Ich", "komme", "aus", "Belarus"],
+        "structure": "[Subject] [verb] [preposition] [place]"
+      },
+      "contrast": [
+        {
+          "type": "verb",
+          "en": "I am from",
+          "de": "Ich komme aus",
+          "note": "В немецком говорят 'я прихожу из' (kommen aus), а не 'я есть из'."
+        },
+        {
+          "type": "word_order",
+          "note": "Порядок слов совпадает — хороший 'якорь'."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "intro_goodbye",
+      "situation": "Ты прощаешься",
+      "image": "👋",
+      "en": {
+        "target": "Goodbye, see you tomorrow.",
+        "tiles": ["Goodbye", "see", "you", "tomorrow"],
+        "structure": "[Greeting] [verb] [object] [adverb]"
+      },
+      "de": {
+        "target": "Auf Wiedersehen, bis morgen.",
+        "tiles": ["Auf", "Wiedersehen", "bis", "morgen"],
+        "structure": "[Preposition] [noun], [preposition] [adverb]"
+      },
+      "contrast": [
+        {
+          "type": "structure",
+          "note": "'Auf Wiedersehen' — буквально 'до свидания' (auf = до, Wiedersehen = свидание). 'Bis morgen' = 'до завтра'."
+        }
+      ],
+      "false_friends": []
+    }
+  ]
+}

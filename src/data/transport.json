@@ -1,0 +1,153 @@
+{
+  "id": "transport",
+  "title": "Транспорт и дорога",
+  "emoji": "🚌",
+  "items": [
+    {
+      "id": "transport_where_station",
+      "situation": "Ты ищешь вокзал",
+      "image": "🚉",
+      "en": {
+        "target": "Where is the train station?",
+        "tiles": ["Where", "is", "the", "train", "station"],
+        "structure": "[Question word] [verb] [article] [noun] [noun]"
+      },
+      "de": {
+        "target": "Wo ist der Bahnhof?",
+        "tiles": ["Wo", "ist", "der", "Bahnhof"],
+        "structure": "[Question word] [verb] [article] [noun]"
+      },
+      "contrast": [
+        {
+          "type": "vocabulary",
+          "en": "train station",
+          "de": "Bahnhof",
+          "note": "В немецком одно слово вместо двух английских."
+        },
+        {
+          "type": "article",
+          "en": "the",
+          "de": "der",
+          "note": "Bahnhof — мужской род (der Bahnhof)."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "transport_ticket",
+      "situation": "Ты хочешь купить билет",
+      "image": "🎫",
+      "en": {
+        "target": "I would like a ticket, please.",
+        "tiles": ["I", "would", "like", "a", "ticket", "please"],
+        "structure": "[Subject] [modal] [verb] [article] [object], [politeness]"
+      },
+      "de": {
+        "target": "Ich möchte eine Fahrkarte, bitte.",
+        "tiles": ["Ich", "möchte", "eine", "Fahrkarte", "bitte"],
+        "structure": "[Subject] [modal] [article] [object], [politeness]"
+      },
+      "contrast": [
+        {
+          "type": "article",
+          "en": "a",
+          "de": "eine",
+          "note": "Fahrkarte — женский род (die Fahrkarte), Akkusativ → eine."
+        },
+        {
+          "type": "vocabulary",
+          "en": "ticket",
+          "de": "Fahrkarte",
+          "note": "Fahrkarte = 'билет на проезд'. Ticket тоже используется, но Fahrkarte точнее."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "transport_late",
+      "situation": "Ты извиняешься за опоздание",
+      "image": "⏰",
+      "en": {
+        "target": "I am sorry, I am late.",
+        "tiles": ["I", "am", "sorry", "I", "am", "late"],
+        "structure": "[Subject] [verb] [adjective], [subject] [verb] [adjective]"
+      },
+      "de": {
+        "target": "Es tut mir leid, ich bin spät dran.",
+        "tiles": ["Es", "tut", "mir", "leid", "ich", "bin", "spät", "dran"],
+        "structure": "[Pronoun] [verb] [pronoun] [adverb], [subject] [verb] [adverb] [particle]"
+      },
+      "contrast": [
+        {
+          "type": "structure",
+          "note": "Немецкое 'Es tut mir leid' — буквально 'это делает мне больно'. Дословно с английского не переводится."
+        },
+        {
+          "type": "phrase",
+          "en": "I am late",
+          "de": "ich bin spät dran",
+          "note": "'Spät dran' — устойчивое выражение 'опаздываю'."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "transport_how_get",
+      "situation": "Ты спрашиваешь, как добраться до центра",
+      "image": "🗺️",
+      "en": {
+        "target": "How do I get to the center?",
+        "tiles": ["How", "do", "I", "get", "to", "the", "center"],
+        "structure": "[Question word] [auxiliary] [subject] [verb] [preposition] [article] [noun]"
+      },
+      "de": {
+        "target": "Wie komme ich ins Zentrum?",
+        "tiles": ["Wie", "komme", "ich", "ins", "Zentrum"],
+        "structure": "[Question word] [verb] [subject] [preposition+article] [noun]"
+      },
+      "contrast": [
+        {
+          "type": "word_order",
+          "en": "How do I get to the center?",
+          "de": "Wie komme ich ins Zentrum?",
+          "note": "В английском нужен вспомогательный глагол 'do'. В немецком — нет, глагол сразу после вопросительного слова."
+        },
+        {
+          "type": "grammar",
+          "en": "to the center",
+          "de": "ins Zentrum",
+          "note": "'Ins' = 'in das' — предлог сливается с артиклем."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "transport_stop",
+      "situation": "Ты спрашиваешь, где твоя остановка",
+      "image": "🚏",
+      "en": {
+        "target": "Is this my stop?",
+        "tiles": ["Is", "this", "my", "stop"],
+        "structure": "[Verb] [demonstrative] [possessive] [noun]"
+      },
+      "de": {
+        "target": "Ist das meine Haltestelle?",
+        "tiles": ["Ist", "das", "meine", "Haltestelle"],
+        "structure": "[Verb] [demonstrative] [possessive] [noun]"
+      },
+      "contrast": [
+        {
+          "type": "word_order",
+          "note": "Структура полностью совпадает — хороший 'якорь'."
+        },
+        {
+          "type": "article",
+          "en": "my",
+          "de": "meine",
+          "note": "Haltestelle — женский род, поэтому 'meine', а не 'mein'."
+        }
+      ],
+      "false_friends": []
+    }
+  ]
+}

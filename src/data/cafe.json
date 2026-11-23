@@ -1,0 +1,148 @@
+{
+  "topic": "cafe",
+  "title": "В кафе",
+  "items": [
+    {
+      "id": "cafe_order_coffee",
+      "situation": "Ты в кафе, хочешь кофе",
+      "image": "☕",
+      "en": {
+        "target": "I would like a coffee, please.",
+        "tiles": ["I", "would", "like", "a", "coffee", "please"],
+        "structure": "[Subject] [modal] [verb] [article] [object], [politeness]"
+      },
+      "de": {
+        "target": "Ich möchte einen Kaffee, bitte.",
+        "tiles": ["Ich", "möchte", "einen", "Kaffee", "bitte"],
+        "structure": "[Subject] [modal] [article] [object], [politeness]"
+      },
+      "contrast": [
+        {
+          "type": "article",
+          "en": "a",
+          "de": "einen",
+          "note": "В немецком артикль меняется по падежу (Akkusativ, мужской род)."
+        },
+        {
+          "type": "word_order",
+          "note": "Порядок слов совпадает: подлежащее + модальный глагол + объект."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "cafe_ask_menu",
+      "situation": "Ты хочешь посмотреть меню",
+      "image": "📋",
+      "en": {
+        "target": "Can I see the menu, please?",
+        "tiles": ["Can", "I", "see", "the", "menu", "please"],
+        "structure": "[Modal] [Subject] [verb] [article] [object], [politeness]"
+      },
+      "de": {
+        "target": "Kann ich die Speisekarte sehen, bitte?",
+        "tiles": ["Kann", "ich", "die", "Speisekarte", "sehen", "bitte"],
+        "structure": "[Modal] [Subject] [article] [object] [verb], [politeness]"
+      },
+      "contrast": [
+        {
+          "type": "word_order",
+          "en": "Can I see the menu?",
+          "de": "Kann ich die Speisekarte sehen?",
+          "note": "В немецком инфинитив (sehen) уходит в конец предложения. В английском глагол сразу после подлежащего."
+        },
+        {
+          "type": "vocabulary",
+          "en": "menu",
+          "de": "Speisekarte",
+          "note": "Не 'Menu' — это ложный друг (Menu = меню на компьютере)."
+        }
+      ],
+      "false_friends": [
+        { "en": "menu", "de": "Speisekarte", "trap": "Menu" }
+      ]
+    },
+    {
+      "id": "cafe_order_water",
+      "situation": "Ты хочешь воды",
+      "image": "💧",
+      "en": {
+        "target": "I would like some water, please.",
+        "tiles": ["I", "would", "like", "some", "water", "please"],
+        "structure": "[Subject] [modal] [verb] [quantifier] [object], [politeness]"
+      },
+      "de": {
+        "target": "Ich möchte etwas Wasser, bitte.",
+        "tiles": ["Ich", "möchte", "etwas", "Wasser", "bitte"],
+        "structure": "[Subject] [modal] [quantifier] [object], [politeness]"
+      },
+      "contrast": [
+        {
+          "type": "quantifier",
+          "en": "some",
+          "de": "etwas",
+          "note": "Английское 'some' и немецкое 'etwas' похожи по функции, но не взаимозаменяемы дословно."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "cafe_ask_bill",
+      "situation": "Ты хочешь попросить счёт",
+      "image": "🧾",
+      "en": {
+        "target": "Could I have the bill, please?",
+        "tiles": ["Could", "I", "have", "the", "bill", "please"],
+        "structure": "[Modal] [Subject] [verb] [article] [object], [politeness]"
+      },
+      "de": {
+        "target": "Könnte ich die Rechnung haben, bitte?",
+        "tiles": ["Könnte", "ich", "die", "Rechnung", "haben", "bitte"],
+        "structure": "[Modal] [Subject] [article] [object] [verb], [politeness]"
+      },
+      "contrast": [
+        {
+          "type": "word_order",
+          "en": "Could I have the bill?",
+          "de": "Könnte ich die Rechnung haben?",
+          "note": "Снова: в немецком инфинитив 'haben' в конце."
+        },
+        {
+          "type": "vocabulary",
+          "en": "bill",
+          "de": "Rechnung",
+          "note": "В британском английском 'bill', в американском 'check'. В немецком — 'Rechnung'."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "cafe_compliment",
+      "situation": "Ты хочешь сказать, что кофе вкусный",
+      "image": "😋",
+      "en": {
+        "target": "The coffee is very good.",
+        "tiles": ["The", "coffee", "is", "very", "good"],
+        "structure": "[Subject] [verb] [adverb] [adjective]"
+      },
+      "de": {
+        "target": "Der Kaffee ist sehr gut.",
+        "tiles": ["Der", "Kaffee", "ist", "sehr", "gut"],
+        "structure": "[Subject] [verb] [adverb] [adjective]"
+      },
+      "contrast": [
+        {
+          "type": "article",
+          "en": "the",
+          "de": "der",
+          "note": "В немецком определённый артикль зависит от рода: der Kaffee (мужской)."
+        },
+        {
+          "type": "word_order",
+          "note": "Структура полностью совпадает — хороший пример 'якоря' между языками."
+        }
+      ],
+      "false_friends": []
+    }
+  ]
+}

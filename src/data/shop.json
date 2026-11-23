@@ -1,0 +1,133 @@
+{
+  "id": "shop",
+  "title": "В магазине",
+  "emoji": "🛒",
+  "items": [
+    {
+      "id": "shop_how_much",
+      "situation": "Ты спрашиваешь, сколько это стоит",
+      "image": "💰",
+      "en": {
+        "target": "How much is this?",
+        "tiles": ["How", "much", "is", "this"],
+        "structure": "[Question word] [quantifier] [verb] [demonstrative]"
+      },
+      "de": {
+        "target": "Wie viel kostet das?",
+        "tiles": ["Wie", "viel", "kostet", "das"],
+        "structure": "[Question word] [quantifier] [verb] [demonstrative]"
+      },
+      "contrast": [
+        {
+          "type": "word_order",
+          "note": "Структура похожа, но в английском глагол 'is', в немецком — 'kostet' (стоит)."
+        },
+        {
+          "type": "vocabulary",
+          "en": "this",
+          "de": "das",
+          "note": "Английское 'this' и немецкое 'das' совпадают по функции указания."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "shop_want_this",
+      "situation": "Ты хочешь купить эту вещь",
+      "image": "🛍️",
+      "en": {
+        "target": "I want to buy this, please.",
+        "tiles": ["I", "want", "to", "buy", "this", "please"],
+        "structure": "[Subject] [verb] [infinitive] [verb] [demonstrative], [politeness]"
+      },
+      "de": {
+        "target": "Ich möchte das kaufen, bitte.",
+        "tiles": ["Ich", "möchte", "das", "kaufen", "bitte"],
+        "structure": "[Subject] [modal] [demonstrative] [infinitive], [politeness]"
+      },
+      "contrast": [
+        {
+          "type": "word_order",
+          "en": "I want to buy this",
+          "de": "Ich möchte das kaufen",
+          "note": "В немецком инфинитив 'kaufen' в конце. Английское 'want to' = 'möchte' (вежливее)."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "shop_where_milk",
+      "situation": "Ты ищешь молоко",
+      "image": "🥛",
+      "en": {
+        "target": "Where is the milk?",
+        "tiles": ["Where", "is", "the", "milk"],
+        "structure": "[Question word] [verb] [article] [object]"
+      },
+      "de": {
+        "target": "Wo ist die Milch?",
+        "tiles": ["Wo", "ist", "die", "Milch"],
+        "structure": "[Question word] [verb] [article] [object]"
+      },
+      "contrast": [
+        {
+          "type": "article",
+          "en": "the",
+          "de": "die",
+          "note": "Milch в немецком — женский род (die Milch)."
+        },
+        {
+          "type": "word_order",
+          "note": "Структура полностью совпадает — хороший 'якорь'."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "shop_card",
+      "situation": "Ты спрашиваешь, можно ли оплатить картой",
+      "image": "💳",
+      "en": {
+        "target": "Can I pay by card?",
+        "tiles": ["Can", "I", "pay", "by", "card"],
+        "structure": "[Modal] [Subject] [verb] [preposition] [noun]"
+      },
+      "de": {
+        "target": "Kann ich mit Karte bezahlen?",
+        "tiles": ["Kann", "ich", "mit", "Karte", "bezahlen"],
+        "structure": "[Modal] [Subject] [preposition] [noun] [verb]"
+      },
+      "contrast": [
+        {
+          "type": "word_order",
+          "en": "Can I pay by card?",
+          "de": "Kann ich mit Karte bezahlen?",
+          "note": "В немецком глагол 'bezahlen' в конце. Предлог 'mit' = 'by' (с помощью)."
+        }
+      ],
+      "false_friends": []
+    },
+    {
+      "id": "shop_thanks",
+      "situation": "Ты благодаришь продавца",
+      "image": "🙏",
+      "en": {
+        "target": "Thank you very much.",
+        "tiles": ["Thank", "you", "very", "much"],
+        "structure": "[Verb] [object] [adverb] [adverb]"
+      },
+      "de": {
+        "target": "Vielen Dank.",
+        "tiles": ["Vielen", "Dank"],
+        "structure": "[Adjective] [noun]"
+      },
+      "contrast": [
+        {
+          "type": "structure",
+          "note": "Английское 'thank you' — глагол + объект. Немецкое 'Vielen Dank' — прилагательное + существительное ('большое спасибо'). Структуры разные, не переводите дословно."
+        }
+      ],
+      "false_friends": []
+    }
+  ]
+}
