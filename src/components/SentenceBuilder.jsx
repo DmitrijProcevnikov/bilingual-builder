@@ -2,12 +2,11 @@ import { useMemo, useState } from "react";
 import {
   DndContext,
   closestCenter,
-  PointerSensor,
+  MouseSensor,
   TouchSensor,
   useSensor,
   useSensors,
-} from "@dnd-kit/core";
-import {
+} from "@dnd-kit/core";import {
   SortableContext,
   horizontalListSortingStrategy,
   useSortable,
@@ -52,8 +51,7 @@ function SortableTile({ id, text, meta }) {
       style={style}
       {...attributes}
       {...listeners}
-      className={`px-3 py-2 rounded-lg border-2 font-medium select-none cursor-grab active:cursor-grabbing ${meta.tileBg} ${meta.tileBorder} ${meta.tileText}`}
-    >
+      className={`px-3 py-2 rounded-lg border-2 font-medium select-none cursor-grab active:cursor-grabbing touch-none ${meta.tileBg} ${meta.tileBorder} ${meta.tileText}`}    >
       {text}
     </button>
   );
@@ -84,11 +82,14 @@ export default function SentenceBuilder({ item, lang, onDone, onBack }) {
   const [checked, setChecked] = useState(null); // null | "correct" | "wrong"
 
   const sensors = useSensors(
-    useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
-    useSensor(TouchSensor, { activationConstraint: { delay: 150, tolerance: 5 } })
-  );
-
-  function handleDragEnd(event) {
+    useSensor(MouseSensor, { activationConstraint: { distance: 8 } }),
+    useSensor(TouchSensor, {
+      activationConstraint: {
+        delay: 80,        // было 250 — стало 80 мс (почти мгновенно)
+        tolerance: 8,     // допуск движения пальца до активации
+      },
+    })
+);  function handleDragEnd(event) {
     const { active, over } = event;
     if (!over || active.id === over.id) return;
     const oldIndex = tiles.findIndex((t) => t.id === active.id);
