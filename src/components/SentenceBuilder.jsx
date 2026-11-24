@@ -66,7 +66,14 @@ function shuffle(arr) {
   return a;
 }
 
-export default function SentenceBuilder({ item, lang, onDone, onBack }) {
+export default function SentenceBuilder({
+  item,
+  lang,
+  onDone,
+  onBack,
+  onAnswer,
+  onMistake,
+}) { 
   const meta = LANG_META[lang];
   const target = item[lang].target;
   const rawTiles = item[lang].tiles;
@@ -106,8 +113,11 @@ export default function SentenceBuilder({ item, lang, onDone, onBack }) {
     const assembled = tiles.map((t) => t.word).join(" ");
     if (normalize(assembled) === normalize(target)) {
       setChecked("correct");
+      onAnswer?.(true);
     } else {
       setChecked("wrong");
+      onAnswer?.(false);
+      onMistake?.();
     }
   }
 
